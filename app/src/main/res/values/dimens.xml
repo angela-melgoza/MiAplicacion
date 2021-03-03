@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_margen">30dp</dimen>
+    <dimen name="titulo_margen">50dp</dimen>
+    <dimen name="txt_size">20dp</dimen>
+    <dimen name="margin_2">20dp</dimen>
+    <dimen name="titulo_size">25dp</dimen>
+</resources>

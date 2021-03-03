@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/titulo_margen"
+        android:text="@string/txtv_screen_titulo"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/titulo_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etxtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txt_margen"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/etxt_nombre"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
+        app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <EditText
+        android:id="@+id/etxtFechaNac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txt_margen"
+        android:ems="10"
+        android:hint="@string/etxt_nacimiento"
+        android:inputType="date"
+        android:focusable="false"
+        android:clickable="true"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@+id/etxtNombre"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etxtNombre"
+        app:layout_constraintTop_toBottomOf="@+id/etxtNombre" />
+
+    <EditText
+        android:id="@+id/etxtTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txt_margen"
+        android:ems="10"
+        android:hint="@string/etxt_telefono"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/etxtFechaNac"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etxtFechaNac"
+        app:layout_constraintTop_toBottomOf="@+id/etxtFechaNac"
+         />
+
+    <EditText
+        android:id="@+id/etxtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txt_margen"
+        android:ems="10"
+        android:hint="@string/etxt_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/etxtTelefono"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etxtTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/etxtTelefono"
+        />
+
+    <EditText
+        android:id="@+id/etxtDescContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txt_margen"
+        android:ems="10"
+        android:hint="@string/etxt_DescContacto"
+        android:inputType="textLongMessage"
+        app:layout_constraintEnd_toEndOf="@+id/etxtEmail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etxtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etxtEmail"
+        />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_ingresar"
+        android:backgroundTint="@color/colorPrimaryLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etxtDescContacto"
+        app:layout_constraintStart_toStartOf="@+id/etxtDescContacto"
+        app:layout_constraintTop_toBottomOf="@+id/etxtDescContacto"
+        app:layout_constraintVertical_bias="0.155" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
